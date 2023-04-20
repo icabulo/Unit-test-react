@@ -7,7 +7,7 @@ function Card({ name, image, handleClick, id }) {
     handleClick(id);
   };
   return (
-    <div className="card" onClick={redirect}>
+    <div className="card" onClick={redirect} data-testId="card">
       <div className="card__img">
         <img src={image} alt={name} />
       </div>
